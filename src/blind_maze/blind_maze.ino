@@ -126,7 +126,7 @@ void updateFlap() {
   stepTarget = wallAhead ? FLAP_STEPS : 0;
 }
 
-// ---------------- SOUND ----------------
+// Sounds
 void beep(int freq, int ms) { tone(PIN_BUZZER, freq, ms); }
 
 void bonk()      { delay(500); beep(2000, 120); delay(130); beep(1500, 200); }  // bump into a wall
